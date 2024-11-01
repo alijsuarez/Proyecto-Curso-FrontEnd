@@ -1,0 +1,237 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+}
+
+body {
+    font-family: 'Space Grotesk', sans-serif;
+    background-color: #141C29;
+    padding-top: 80px;
+}
+
+h1 {
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    margin: 30px 0px;
+}
+ 
+
+.contenedor img{
+    width: 320px;
+    height: 340px;
+    object-fit: cover;
+    border-radius: 20px 20px 0px 0px;
+}
+
+header {
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15%;
+    height: 70px;
+    top: 0;
+    width: 100%;  
+}
+/* menu */
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover:not(.active) {
+    background-color: #111;
+}
+/* fin menu */
+
+/* nosotros */
+.container-nosotros{
+    width: 1fr;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 15px;
+    padding-left: 15px;
+    margin: 50px;
+}
+/* fin nosotros */
+
+/* productos */
+.container-title {
+    padding: 30px;
+    margin-bottom: 50px;
+    background-color: #000000;
+}
+
+.contenedor {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 50px;
+    margin-bottom: 20px;
+}
+
+.contenedor>div {
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
+    background-color: #2D4263;
+    border-radius: 20px;
+    height: 510px;
+
+}
+
+.contenedor>div:hover {
+    background-color: #11294d;
+}
+
+.informacion {
+    height: 150px;
+    width: 320px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 15px;
+    padding-left: 15px;
+}
+
+.informacion>p:first-child {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 25px;
+    font-weight: 300;
+}
+
+.informacion .precio {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.informacion .precio span {
+    font-size: 17px;
+    font-weight: 300;
+}
+
+.informacion button {
+    background-color: #263143;
+    width: 100px;
+    height: 35px;
+    border-radius: 10px;
+    border: none;
+
+    font-size: 17px;
+    font-weight: 300;
+    cursor: pointer;
+}
+
+.informacion button:hover {
+    background-color: #2D4263;
+}
+
+.container-nosotros{
+    text-align: justify;
+}
+
+/* fin productos */
+
+/* form */
+@media screen and (min-width: 600px) {
+    form{
+        display: flex;
+    }
+}
+/* reseñas */
+.container-reviews {
+    padding: 15px 9%;
+    padding-bottom: 100px;
+}
+
+.container-reviews .heading {
+    text-align: center;
+    padding-bottom: 15px;
+    color: #fff;
+    text-shadow: 0 5px 10px rgba(0, 0, 0, .2);
+    font-size: 50px;
+}
+
+.container-reviews .box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+    gap: 15px;
+}
+
+.container-reviews .box-container .box {
+    box-shadow: 0 5px 10px rgba(0, 0, 0, .2);
+    border-radius: 5px;
+    background: #fff;
+    text-align: center;
+    padding: 30px 20px;
+}
+
+.container-reviews .box-container .box img {
+    height: 80px;
+}
+
+.container-reviews .box-container .box h3 {
+    color: #444;
+    font-size: 22px;
+    padding: 10px 0;
+}
+
+.container-reviews .box-container .box p {
+    color: #777;
+    font-size: 15px;
+    line-height: 1.8;
+}
+
+.container-reviews .box-container .box .btn {
+    margin-top: 10px;
+    display: inline-block;
+    background: #333;
+    color: #fff;
+    font-size: 17px;
+    border-radius: 5px;
+    padding: 8px 25px;
+}
+
+.container-reviews .box-container .box .btn:hover {
+    letter-spacing: 1px;
+}
+
+.container-reviews .box-container .box:hover {
+    box-shadow: 0 10px 15px rgba(0, 0, 0, .3);
+    transform: scale(1.03);
+}
+
+@media (max-width:768px) {
+    .container-reviews {
+        padding: 20px;
+    }
+}
+/* fin reseñas */
+
+/* footer */  
+
+footer {
+    padding: 30px;
+    background-color: #000000;
+    margin-top: 50px;
+    color: #fff;
+}
