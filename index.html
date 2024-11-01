@@ -9,12 +9,10 @@
   <title>CyberTech</title>
   <link rel="icon" type="image/x-icon" href="/images/favicon.png">
   <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap"
     rel="stylesheet" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap"
     rel="stylesheet" />
   <link href="styles.css" rel="stylesheet" type="text/css" />
@@ -27,7 +25,9 @@
       <img src="images/logo.png" alt="">
     </div>
   </header>
+  <!-- menu -->
   <nav>
+    <div class="menu">
     <ul>
       <li><a href="#home">Home</a></li>
       <li><a href="#nosotros">Nosotros</a></li>
@@ -35,8 +35,10 @@
       <li><a href="#productos">Productos</a></li>
       <li><a href="#contacto">Contacto</a></li>
     </ul>
+  </div>
   </nav>
   <main>
+    <!-- nosotros -->
     <section id="nosotros">
       <div class="container-title">
         <h2>Nosotros</h2>
@@ -56,6 +58,8 @@
         </p>
       </div>
     </section>
+
+    <!-- productos -->
     <section id="productos">
       <div class="container-title">
         <h2>Productos</h2>
@@ -111,11 +115,13 @@
         </div>
       </div>
     </section>
+
+    <!-- reseñas -->
     <section id="reseñas">
       <div class="container-title">
         <h2>Reseñas</h2>
       </div>
-      <div class="container-reviews">
+      <div class="container-resenas">
         <div class="box-container">
           <div class="box">
             <h3>Siempre fiel a Cybertech</h3>
@@ -163,10 +169,13 @@
         </div>
       </div>
     </section>
+
+    <!-- contacto -->
     <section id="contacto">
       <div class="container-title">
         <h2>Contacto</h2>
       </div>
+      <!-- formulario de contacto -->
       <form id="fs-frm" name="simple-contact-form" accept-charset="utf-8" action="https://formspree.io/f/xwpkllnq"
         method="post">
         <fieldset id="fs-frm-inputs">
@@ -182,8 +191,31 @@
       </form>
     </section>
   </main>
+
+  <!-- footer -->
   <footer>
-    <p>Footer</p>
+    <div class="footer">
+      <div class="row">
+        <a href="#"><i class="fa fa-facebook"></i></a>
+        <a href="#"><i class="fa fa-instagram"></i></a>
+        <a href="#"><i class="fa fa-youtube"></i></a>
+        <a href="#"><i class="fa fa-twitter"></i></a>
+      </div>
+
+      <div class="row">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#nosotros">Nosotros</a></li>
+          <li><a href="#productos">Productos</a></li>
+          <li><a href="#resenas">Reseñas</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+      </div>
+
+      <div class="row">
+        CyberTech Copyright © 2024 
+      </div>
+    </div>
   </footer>
 </body>
 
