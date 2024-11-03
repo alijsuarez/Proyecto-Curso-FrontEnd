@@ -24,22 +24,23 @@
     <div>
       <img src="images/logo.png" alt="">
     </div>
-  </header>
-  <!-- menu -->
+    <!-- menu -->
   <nav>
     <div class="menu">
     <ul>
-      <li><a href="#home">Home</a></li>
+      <li><a href="#">Home</a></li>
       <li><a href="#nosotros">Nosotros</a></li>
-      <li><a href="#reseñas">Reseñas</a></li>
       <li><a href="#productos">Productos</a></li>
+      <li><a href="#reseñas">Reseñas</a></li>
       <li><a href="#contacto">Contacto</a></li>
     </ul>
   </div>
   </nav>
+  </header>
+  
   <main>
     <!-- nosotros -->
-    <section id="nosotros">
+    <section id="nosotros" class="seccion" >
       <div class="container-title">
         <h2>Nosotros</h2>
       </div>
@@ -60,7 +61,7 @@
     </section>
 
     <!-- productos -->
-    <section id="productos">
+    <section id="productos" class="seccion">
       <div class="container-title">
         <h2>Productos</h2>
       </div>
@@ -117,7 +118,7 @@
     </section>
 
     <!-- reseñas -->
-    <section id="reseñas">
+    <section id="reseñas" class="seccion">
       <div class="container-title">
         <h2>Reseñas</h2>
       </div>
@@ -169,12 +170,12 @@
         </div>
       </div>
     </section>
-    <div class="container-title">
-      <h2>Contacto</h2>
-    </div>
+    
     <!-- contacto -->
-    <section id="contacto">
-      
+    <section id="contacto" class="seccion">
+      <div class="container-title">
+        <h2>Contacto</h2>
+      </div>
       <!-- formulario de contacto -->
       <form id="fs-frm" name="simple-contact-form" accept-charset="utf-8" action="https://formspree.io/f/xwpkllnq"
         method="post">
@@ -187,7 +188,7 @@
           <textarea rows="5" name="message" id="message" class="form-control" placeholder="Escriba su mensaje aquí" required=""></textarea>
           <input type="hidden" name="_subject" id="email-subject" value="Contact Form Submission" />
         </fieldset>
-        <input type="submit" class="btn" value="Submit" />
+        <input type="submit" class="frm-btn" value="Submit" />
       </form>
     </section>
   </main>

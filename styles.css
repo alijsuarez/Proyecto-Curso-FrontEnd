@@ -7,8 +7,7 @@
 
 body {
     font-family: 'Space Grotesk', sans-serif;
-    background-color: #141C29;
-    padding-top: 80px;
+    background-color: #171d27;
 }
 
 h1 {
@@ -26,14 +25,17 @@ h1 {
 }
 
 header {
-    background-color: black;
     display: flex;
+    background-color: #333;
+    justify-content: space-between;
     align-items: center;
-    justify-content: center;
+    position: sticky;
     gap: 15%;
     height: 70px;
     top: 0;
     width: 100%;
+    margin-bottom: 50px;
+   
 }
 
 /* menu */
@@ -60,7 +62,15 @@ header {
 
 
 /* fin menu */
-
+.seccion {
+    scroll-margin-top: 8ex;
+}
+.container-title {
+    padding: 30px;
+    margin-bottom: 50px;
+    background-color: #000000;
+    
+}
 /* nosotros */
 .container-nosotros {
     width: 1fr;
@@ -75,13 +85,10 @@ header {
 
 /* fin nosotros */
 
-/* productos */
-.container-title {
-    padding: 30px;
-    margin-bottom: 50px;
-    background-color: #000000;
-}
 
+
+
+/* productos */
 .contenedor {
     display: flex;
     justify-content: center;
@@ -91,7 +98,6 @@ header {
 }
 
 .contenedor>div {
-    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
     background-color: #2D4263;
     border-radius: 20px;
     height: 510px;
@@ -198,44 +204,33 @@ header {
 /* fin reseñas */
 
 /* form */
-form {
 
-    margin-top: 50px;
-    margin-bottom: 50px;
-}
 
 @media (min-width: 600px) {
     form {
         display: flex;
+        margin-top: 50px;
+        margin-bottom: 50px;
     }
+}
+
+#contacto {
+    display: grid;
+    padding-top: 0px;
+}
+#fs-frm {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
 }
 
 #fs-frm-inputs {
     border: none;
-}
-#contacto {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    flex-wrap: wrap;
-    padding-top: 0px;
+    
 }
 
 #contacto label {
     display: block;
-}
-
-#contacto button {
-    display: block;
-    text-align: center;
-    margin: 5px;
-}
-
-#contacto form {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
 }
 
 .form-control {
@@ -255,7 +250,9 @@ form {
 
 }
 
-.btn {
+.frm-btn {
+    margin: 0 auto;
+    display: inline-block;
     position: relative;
     background-color:rgb(81, 81, 81);
     border-radius: 5px;
@@ -263,8 +260,10 @@ form {
     color: white;
     padding: 0.8em 1.8em;
     cursor: pointer;
-    user-select: none;
-    text-align: center;
+    display: block;
+    width: 300px;
+   
+    
 }
 
 
