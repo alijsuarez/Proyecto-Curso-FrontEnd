@@ -25,22 +25,22 @@
       <img src="images/logo.png" alt="">
     </div>
     <!-- menu -->
-  <nav>
-    <div class="menu">
-    <ul>
-      <li><a href="#">Home</a></li>
-      <li><a href="#nosotros">Nosotros</a></li>
-      <li><a href="#productos">Productos</a></li>
-      <li><a href="#reseñas">Reseñas</a></li>
-      <li><a href="#contacto">Contacto</a></li>
-    </ul>
-  </div>
-  </nav>
+    <nav>
+      <div class="menu">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#nosotros">Nosotros</a></li>
+          <li><a href="#productos">Productos</a></li>
+          <li><a href="#reseñas">Reseñas</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+      </div>
+    </nav>
   </header>
-  
+
   <main>
     <!-- nosotros -->
-    <section id="nosotros" class="seccion" >
+    <section id="nosotros" class="seccion">
       <div class="container-title">
         <h2>Nosotros</h2>
       </div>
@@ -59,7 +59,14 @@
         </p>
       </div>
     </section>
-    <!-- INSERTAR VIDEO -->
+    <!-- video -->
+    <div class="video-container">
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/-HXH1h-TCTw?si=mwUryU8jJdZhtvrw"
+        title="YouTube video player" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+    <!-- fin video -->
     <!-- productos -->
     <section id="productos" class="seccion">
       <div class="container-title">
@@ -170,7 +177,7 @@
         </div>
       </div>
     </section>
-    
+
     <!-- contacto -->
     <section id="contacto" class="seccion">
       <div class="container-title">
@@ -181,11 +188,14 @@
         method="post">
         <fieldset id="fs-frm-inputs">
           <label for="full-name">Nombre Completo</label>
-          <input type="text" name="name" id="full-name" class="form-control" placeholder="Nombre y Apellido" required="" />
+          <input type="text" name="name" id="full-name" class="form-control" placeholder="Nombre y Apellido"
+            required="" />
           <label for="email-address">Correo Electrónico</label>
-          <input type="email" name="_replyto" id="email-address" class="form-control" placeholder="correo@dominio.com" required="" />
+          <input type="email" name="_replyto" id="email-address" class="form-control" placeholder="correo@dominio.com"
+            required="" />
           <label for="message">Mensaje</label>
-          <textarea rows="5" name="message" id="message" class="form-control" placeholder="Escriba su mensaje aquí" required=""></textarea>
+          <textarea rows="5" name="message" id="message" class="form-control" placeholder="Escriba su mensaje aquí"
+            required=""></textarea>
           <input type="hidden" name="_subject" id="email-subject" value="Contact Form Submission" />
         </fieldset>
         <input type="submit" class="frm-btn" value="Submit" />
@@ -214,7 +224,7 @@
       </div>
 
       <div class="row">
-        CyberTech Copyright © 2024 
+        CyberTech Copyright © 2024
       </div>
     </div>
   </footer>
