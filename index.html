@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <title>CyberTech</title>
   <link rel="icon" type="image/x-icon" href="/images/favicon.png">
@@ -25,17 +25,23 @@
       <img src="images/logo.png" alt="">
     </div>
     <!-- menu -->
+
     <nav>
       <div class="menu">
         <ul>
           <li><a href="#">Home</a></li>
           <li><a href="#nosotros">Nosotros</a></li>
           <li><a href="#productos">Productos</a></li>
+          <li><a href="#carrito">Carrito</a></li>
           <li><a href="#reseñas">Reseñas</a></li>
           <li><a href="#contacto">Contacto</a></li>
         </ul>
       </div>
     </nav>
+
+
+    <!--  -->
+
   </header>
 
   <main>
@@ -60,12 +66,12 @@
       </div>
     </section>
     <!-- video -->
-    <div class="video-container">
+     <div class="video-container">
       <iframe width="560" height="315" src="https://www.youtube.com/embed/-HXH1h-TCTw?si=mwUryU8jJdZhtvrw"
         title="YouTube video player" frameborder="0"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
         referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-    </div>
+    </div> 
     <!-- fin video -->
     <!-- productos -->
     <section id="productos" class="seccion">
@@ -73,56 +79,27 @@
         <h2>Productos</h2>
       </div>
       <div id="contenedor" class="contenedor">
-        <div>
-          <img src="images/hp.webp" alt="producto 1" />
-          <div class="informacion">
-            <p>Notebook Hp 15.6 Core I5-1235u/8g/512g/w11</p>
-            <p class="precio">$1.999.999</p>
-            <button>Comprar</button>
-          </div>
-        </div>
-        <div>
-          <img src="images/Redmi20Watch.webp" alt="producto 2" />
-          <div class="informacion">
-            <p>Redmi Watch 3 Active</p>
-            <p class="precio">$89.990</p>
-            <button>Comprar</button>
-          </div>
-        </div>
-        <div>
-          <img src="images/tablet.webp" alt="producto 3" />
-          <div class="informacion">
-            <p>Tablet Samsung Galaxy Tab S6 Lite</p>
-            <p class="precio">$859.000</p>
-            <button>Comprar</button>
-          </div>
-        </div>
-        <div>
-          <img src="images/iphone.webp" alt="producto 4" />
-          <div class="informacion">
-            <p>Apple iPhone 15 Pro Max</p>
-            <p class="precio">$3.750.000</p>
-            <button>Comprar</button>
-          </div>
-        </div>
-        <div>
-          <img src="images/router.webp" alt="producto 5" />
-          <div class="informacion">
-            <p>Router Linksys AC1900 Dual Band</p>
-            <p class="precio">$150.000</p>
-            <button>Comprar</button>
-          </div>
-        </div>
-        <div>
-          <img src="images/auriJBL.webp" alt="producto 6" />
-          <div class="informacion">
-            <p>Auriculares Gamer JBL Quantum 910</p>
-            <p class="precio">$699.999</p>
-            <button>Comprar</button>
-          </div>
-        </div>
+
       </div>
     </section>
+    <!--  fin productos  -->
+
+    <!-- carrito -->
+    <section id="carrito" class="seccion">
+      <div class="container-title">
+        <h2>Carrito</h2>
+      </div>
+      <div id="carrito" class="carrito">
+        <ul class="lista-carrito">
+
+        </ul>
+        <p id="total" class="total"> Total a Pagar: $0</p>
+        <p id="mensaje" class="mensaje"></p>
+        <input id="btn-vaciar-carrito" type="button" value="Borrar" class="btn">
+        <input id="btn-ir-pagar" type="button" value="Ir a Pagar" class="btn">
+      </div>
+    </section>
+    <!-- fin carrito -->
 
     <!-- reseñas -->
     <section id="reseñas" class="seccion">
@@ -228,6 +205,7 @@
       </div>
     </div>
   </footer>
+  <script src="scripts.js"></script>
 </body>
 
 </html>

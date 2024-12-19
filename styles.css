@@ -129,8 +129,6 @@ header {
     padding-left: 15px;
 }
 
-
-
 .informacion .precio {
     font-size: 20px;
     font-weight: 500;
@@ -141,11 +139,11 @@ header {
     font-weight: 300;
 }
 
-.informacion button {
+.informacion .btn {
     background-color: #263143;
-    width: 100px;
+    width: 200px; 
     height: 35px;
-    border-radius: 10px;
+    border-radius: 5px;
     border: none;
 
     font-size: 17px;
@@ -159,6 +157,18 @@ header {
 }
 
 /* fin productos */
+
+/* carrito */
+.carrito .btn {
+    background-color: #263143;
+    width: 200px; 
+    height: 35px;
+    border-radius: 5px;
+    border: none;
+    font-size: 17px;
+    font-weight: 300;
+    cursor: pointer;
+}
 
 /* reseñas */
 .container-reseñas {
@@ -213,8 +223,6 @@ header {
     border-radius: 5px;
     padding: 8px 25px;
 }
-
-
 /* fin reseñas */
 
 /* form */
