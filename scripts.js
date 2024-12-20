@@ -24,16 +24,17 @@ const productos = [
     "precio": "150000",
     "imagen": "images/router.webp"
   },
-  { 
+  {
     "nombre": "Auriculares Gamer JBL Quantum 910",
     "precio": "699999",
     "imagen": "images/auriJBL.webp"
   }
 ]
 
+
 let productosHtml = "";
 for (let indice = 0; indice < productos.length; indice++) {
-  productosHtml += 
+  productosHtml +=
     `
         <div>
           <img src=${productos[indice].imagen} />
@@ -55,11 +56,14 @@ contenedordeProductos.innerHTML = productosHtml;
 const botonesAgregarCarrito = document.querySelectorAll("#btn-agregar-carrito");
 const listaCarrito = document.querySelector(".lista-carrito");
 const totalCarrito = document.querySelector("#total");
+const carritoContador = document.querySelector("#carrito-contador");
 let totalPagar = 0;
-
+let contadorCarrito = 0;
 //agregar listener a los botones
 for (let indice = 0; indice < botonesAgregarCarrito.length; indice++) {
   //agregar productos al carrito  
+
+  /*
   function agregarAlCarrito() {
     mensaje.innerHTML = "";
     const elementoLi = document.createElement("li");
@@ -73,6 +77,21 @@ for (let indice = 0; indice < botonesAgregarCarrito.length; indice++) {
     
   }
   botonesAgregarCarrito[indice].addEventListener("click", agregarAlCarrito);
+  */
+
+  botonesAgregarCarrito[indice].addEventListener("click", () => {
+    const elementoLi = document.createElement("li");
+    elementoLi.innerHTML =
+      `
+      <p>${productos[indice].nombre}  $${productos[indice].precio}</p>
+    `;
+    listaCarrito.appendChild(elementoLi);
+    totalPagar += parseInt(productos[indice].precio);
+    totalCarrito.innerHTML = "Total a Pagar: $" + totalPagar;
+    mensaje.innerHTML = "";
+    contadorCarrito++;
+    carritoContador.innerHTML = contadorCarrito;
+  });
 }
 
 //agragar listener al boton borrar
@@ -82,6 +101,9 @@ botonBorrar.addEventListener("click", () => {
   listaCarrito.innerHTML = "";
   totalPagar = 0;
   totalCarrito.innerHTML = "Total a Pagar: $" + totalPagar;
+  mensaje.innerHTML = "";
+  contadorCarrito = 0;
+  carritoContador.innerHTML = contadorCarrito;
 });
 
 
