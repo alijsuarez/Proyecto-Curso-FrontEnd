@@ -168,6 +168,7 @@ header {
 
 /* fin productos */
 
+
 /* carrito */
 .carrito .btn {
     background-color: #263143;
@@ -301,6 +302,17 @@ header {
 
 
 /* fin form */
+
+#btn-volver {
+    background-color: #263143;
+    width: 200px; 
+    height: 35px;
+    border-radius: 5px;
+    border: none;
+    font-size: 17px;
+    font-weight: 300;
+    cursor: pointer;
+}
 
 /* footer */
 
